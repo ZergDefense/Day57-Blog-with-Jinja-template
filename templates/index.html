@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog templating with Jinja</title>
+</head>
+<body>
+  <h1>Hello World!</h1>
+  <h2>{{ 5 * 6 }}</h2>
+  <h3>This is a random number between 1-1000: {{ random_number }}</h3>
+  <a href="{{ url_for('get_blog', num=1) }}">Go To Blog</a>
+</body>
+<footer>
+    <p>This is a very good footer from year {{ footer_year }}</p>
+</footer>
+</html>
